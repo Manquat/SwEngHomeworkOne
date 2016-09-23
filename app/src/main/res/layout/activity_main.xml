@@ -24,7 +24,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:layout_marginTop="27dp"
-        android:id="@+id/mainName"
+        android:id="@+id/mainUserName"
         android:hint="@string/main_name_hint"
         android:layout_gravity="center_horizontal"/>
 
@@ -33,5 +33,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/mainGoButton"
-        android:layout_gravity="center_horizontal"/>
+        android:layout_gravity="center_horizontal"
+        android:onClick="greetUser" />
 </LinearLayout>
