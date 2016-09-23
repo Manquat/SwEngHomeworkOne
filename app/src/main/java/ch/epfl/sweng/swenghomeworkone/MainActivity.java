@@ -17,8 +17,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     /**
+     * Implements of the OnClickListener interface for the button
      * Called when the user click on the go Button
-     * @param view
+     * @param view The view that has been clicked (not used in this method)
      */
     public void greetUser(View view) {
         Intent greetingIntent = new Intent(this, GreetingActivity.class);
