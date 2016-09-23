@@ -31,4 +31,10 @@ public class MainActivityTest extends ActivityInstrumentationTestCase2<MainActiv
         onView(withId(R.id.mainGoButton)).perform(click());
         onView(withId(R.id.greetingMessage)).check(matches(withText("Hello from my unit test!")));
     }
+
+    public void testAnonymousUser() {
+        getActivity();
+        onView(withId(R.id.mainGoButton)).perform(click());
+        onView(withId(R.id.greetingMessage)).check(matches(withText("Hello Anonymous!")));
+    }
 }
